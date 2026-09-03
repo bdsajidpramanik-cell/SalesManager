@@ -1,0 +1,21 @@
+{
+  "id": "/",
+  "name": "Sales Order Collection PWA",
+  "short_name": "SalesOrder",
+  "description": "Mobile-first Sales Order Collection Web App for field sales representatives with offline support.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "orientation": "portrait-primary",
+  "categories": ["business", "productivity"],
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

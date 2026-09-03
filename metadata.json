@@ -1,0 +1,6 @@
+{
+  "name": "Sales Order Collection PWA",
+  "description": "Mobile-first Sales Order Collection Web App for field sales representatives to quickly take orders at shops, save offline, and sync.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

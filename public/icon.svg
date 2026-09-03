@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" rx="112" fill="#0f172a"/>
+  <rect x="40" y="40" width="432" height="432" rx="90" fill="url(#grad)" opacity="0.12"/>
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+  </defs>
+  <!-- Clipboard/Order icon -->
+  <rect x="120" y="110" width="272" height="320" rx="24" fill="#1e293b" stroke="#334155" stroke-width="8"/>
+  <path d="M196 90 C196 74, 210 60, 226 60 L286 60 C302 60, 316 74, 316 90 L316 110 L196 110 Z" fill="#10b981"/>
+  <circle cx="256" cy="85" r="10" fill="#0f172a"/>
+  
+  <!-- Checkmark & Order lines -->
+  <line x1="164" y1="180" x2="348" y2="180" stroke="#38bdf8" stroke-width="12" stroke-linecap="round"/>
+  <line x1="164" y1="230" x2="290" y2="230" stroke="#94a3b8" stroke-width="12" stroke-linecap="round"/>
+  <line x1="164" y1="280" x2="330" y2="280" stroke="#94a3b8" stroke-width="12" stroke-linecap="round"/>
+  
+  <!-- Fast Check Badge -->
+  <circle cx="340" cy="360" r="54" fill="#10b981"/>
+  <polyline points="318,360 334,376 366,344" fill="none" stroke="#ffffff" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

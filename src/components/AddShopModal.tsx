@@ -155,16 +155,42 @@ export const AddShopModal: React.FC<AddShopModalProps> = ({
           </div>
 
           <div>
-            <label className="font-bold text-slate-700 block mb-1">
-              রুট / এলাকা
-            </label>
+            <div className="flex items-center justify-between mb-1">
+              <label className="font-bold text-slate-700">
+                রুট / এলাকা (মোহাম্মদপুর জোন) *
+              </label>
+            </div>
             <input
               type="text"
+              required
               value={route}
               onChange={(e) => setRoute(e.target.value)}
-              placeholder="যেমন: রুট ১"
+              placeholder="যেমন: মোহাম্মদপুর টাউন হল"
               className="w-full p-2.5 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:bg-white focus:ring-1 focus:ring-emerald-500 font-medium"
             />
+            <div className="flex flex-wrap gap-1 mt-1.5">
+              {[
+                'মোহাম্মদপুর টাউন হল',
+                'তাজমহল ও শিয়া মসজিদ',
+                'নূরজাহান ও সলিমুল্লাহ রোড',
+                'রিং রোড ও জাপান গার্ডেন',
+                'বাবর রোড ও আসাদগেট',
+                'কাটাসুর ও বসিলা রোড'
+              ].map((rt) => (
+                <button
+                  key={rt}
+                  type="button"
+                  onClick={() => setRoute(rt)}
+                  className={`text-[10px] px-2 py-0.5 rounded-md border transition ${
+                    route === rt
+                      ? 'bg-emerald-600 text-white border-emerald-600'
+                      : 'bg-slate-100 hover:bg-slate-200 text-slate-700 border-slate-200'
+                  }`}
+                >
+                  {rt}
+                </button>
+              ))}
+            </div>
           </div>
 
           {/* Photo */}

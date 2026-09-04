@@ -3,6 +3,7 @@ import { Search, Calendar, Store, Clock, ChevronRight, RotateCcw, FileText, X, C
 import { Order, Shop } from '../types';
 import { getTodayDateString } from '../services/storage';
 import { getCurrentScheduleStatus } from '../services/dailyScheduleService';
+import { MonthlyTargetCard } from './MonthlyTargetCard';
 
 interface OrderHistoryViewProps {
   orders: Order[];
@@ -53,6 +54,9 @@ export const OrderHistoryView: React.FC<OrderHistoryViewProps> = ({
 
   return (
     <div className="space-y-3">
+      {/* Monthly Target Tracker (Top of History view, 1-time change per month, tracks 100% completion) */}
+      <MonthlyTargetCard orders={orders} />
+
       {/* Header & Filter Card */}
       <div className="bg-white p-3 rounded-2xl shadow-xs border border-slate-200 space-y-2">
         <div className="flex items-center justify-between">
